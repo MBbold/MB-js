@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    border-radius: 10px;
+    transition: all 0.5 ease-in-out;
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+}
+.container button {
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+.container2 div{
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+#btn{
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Ms Madi', cursive;
+    width: 300px;
+    height: 150px;
+    border: none;
+    border-radius: 20px;
+    background-image:linear-gradient(to right, rgba(5, 197, 255, 0.555) , rgb(12, 129, 238));
+    margin-top: 200px;
+}
+button:hover{
+    background-color: black;
+    background-image: none;
+    
+}

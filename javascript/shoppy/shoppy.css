@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: auto;
+}
+header{
+    width: 100vw;
+    height: auto;
+}
+.head{
+    width: 100vw;
+    height: 40px;
+    background-color: #4f3f68;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.margin-left{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.text-style{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head1{
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid gainsboro;
+    /* position: relative; */
+}
+.button{
+    width: 60px;
+    height: 40px;
+    background-color: #4f3f68;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: absolute; */
+    margin: 10px 10px;
+}
+.button:hover{
+    cursor: pointer;
+}
+.line{
+    width: 20px;
+    height: 3px;
+    background-color: #fd7e14;
+    border-radius: 5px;
+    margin:1px 0 ;
+    /* position: relative; */
+}
+.lineRotate{
+    transform: rotate();
+}
+.menuList{
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    /* position: absolute; */
+    background-color: aliceblue;
+    transform: translateX(-110%);
+    transition: 0.5s;
+    z-index: 1000;
+}
+.menuList1{
+    display: flex;
+}
+.menuList2{
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+    display: none;
+}
+.menuList1 span:hover{
+    color: white;
+    background-color: gainsboro;
+}
+.menuList2:hover{
+    display: block;
+}
+.hide{
+    transform: translateX(0);
+}
+.hide1{
+    transform: translateX(0);
+}
+.image{
+    width: 100vw;
+    height: 500px;
+    /* background-image: url(https://cdn5.shoppy.mn/img/118999/3584x0xwebp/main-banner-1.jpg?h=63b514cfc7d482f2529f7ca0a7d8d035db4ec9d7); */
+    background-color: aqua;
+    /* background-size: 100%; */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+/* .image1{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+} */
+.btn1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNi44MjgiIHZpZXdCb3g9IjAgMCAxNiAxNi44MjgiPiAgICA8ZGVmcz4gICAgICAgIDxzdHlsZT4gICAgICAgICAgICAuY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4fSAgICAgICAgPC9zdHlsZT4gICAgPC9kZWZzPiAgICA8ZyBpZD0iYXJyb3ctcmlnaHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00IC0zLjU4NikiPiAgICAgICAgPHBhdGggaWQ9IkxpbmVfNTIwIiBkPSJNMCAwaDE0IiBjbGFzcz0iY2xzLTEiIGRhdGEtbmFtZT0iTGluZSA1MjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUgMTIpIi8+ICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMTEzOCIgZD0iTTEyIDVsNyA3LTcgNyIgY2xhc3M9ImNscy0xIiBkYXRhLW5hbWU9IlBhdGggMTExMzgiLz4gICAgPC9nPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform:rotate(180deg);
+    box-shadow: 0px 0px 10px gray;
+    margin: 0 20px;
+    position: absolute;
+}
+.btn1:hover{
+    cursor: pointer;
+    /* zoom: 120%; */
+    background-size: 40%;
+
+}
+.btn2:hover{
+    cursor: pointer;
+    background-size: 40%;
+}
+.btn2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNi44MjgiIHZpZXdCb3g9IjAgMCAxNiAxNi44MjgiPiAgICA8ZGVmcz4gICAgICAgIDxzdHlsZT4gICAgICAgICAgICAuY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4fSAgICAgICAgPC9zdHlsZT4gICAgPC9kZWZzPiAgICA8ZyBpZD0iYXJyb3ctcmlnaHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00IC0zLjU4NikiPiAgICAgICAgPHBhdGggaWQ9IkxpbmVfNTIwIiBkPSJNMCAwaDE0IiBjbGFzcz0iY2xzLTEiIGRhdGEtbmFtZT0iTGluZSA1MjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUgMTIpIi8+ICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMTEzOCIgZD0iTTEyIDVsNyA3LTcgNyIgY2xhc3M9ImNscy0xIiBkYXRhLW5hbWU9IlBhdGggMTExMzgiLz4gICAgPC9nPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 10px gray;
+    margin: 0 20px;
+    position: absolute;
+    right: 10px;
+}
